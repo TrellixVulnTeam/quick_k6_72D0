@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Project Bootstrap</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#primary-menu" data-bs-offset="90" >
+    <header class="header">
+        <div class="header__top-bar primary-bg text-white py-2">
+            <div class="container">
+                <p class="d-flex flex-wrap justify-content-center mb-0">
+                     <strong>This is a free demo.</strong> Click here to browse through 390+ Bootstrap 5 components →
+                </p>
+            </div>
+        </div><!--End .header__top-bar-->
+        <div class="header__inner py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center text-md-start">
+                        <button class="d-md-none btn-outline btn-outline-primary btn-outline-sm d-flex justify-content-start toggle-menu px-3 py-2 rounded" data-bs-toggle="offcanvas" data-bs-target="#toggle-menu-content"><i class="fas fa-bars"></i></button>
+                        <a href="#"><img src="images/logo.svg" alt=""></a>
+                    </div>
+                    <div class="col-8 d-flex justify-content-end">
+                        <nav id="primary-menu" class="primary-menu d-md-flex justify-content-end p-2 d-none ">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                                  </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" aria-current="page" href="#overview">Overview</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#screenshot">Screenshots</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#features">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#pricing">Pricing</a>
+                                  </li>
+                                
+                                <li class="nav-item ms-4">
+                                  <a class="nav-link btn btn-primary text-white rounded-3 secondary-button">Download Free</a>
+                                </li>
+                            </ul>     
+                        </nav>   
+                        <!--End .primary-menu-->                  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="toggle-menu-content" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h4 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h4>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="primary-menu" class="primary-menu d-block p-2 d-md-none ">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#screenshot">Screenshots</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                          </li>
+                        
+                        <li class="nav-item ms-0 ms-md-4">
+                          <a class="nav-link btn btn-primary text-white rounded-3 secondary-button">Download Free</a>
+                        </li>
+                    </ul>     
+                </nav>   
+            </div>
+          </div>
+    </header><!--End .header-->
+    
+    <section class="introduction-box py-5" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center mb-3 mb-md-0 wow animate__animated animate__backInLeft" data-wow-duration="1s">
+                    <h1 class="display-4 fw-bold">
+                        <span class="primary-text">It's time to amplify your</span> <span class="secondary-text">online business</span>
+                    </h1>
+                    <p class="fs-5 my-4">Build a beautiful, modern website with flexible Bootstrap components built from scratch.</p>
+                    <div>
+                        <a href="#" class="btn btn-primary text-white rounded-3 secondary-button action-button">Get started <i class="fas fa-angle-right ms-2"></i></a>
+                        <a href="#" class="btn btn-outline-secondary rounded-3 action-button">See Illustrations</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 wow animate__animated animate__backInRight" ata-wow-duration="1s">
+                    <img src="images/illustration-3.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section><!--End .introduction-box-->
+
+    <section class="introduction-box py-5 bg-light wow animate__animated animate__backInDown" id="overview">
+        <div class="container py-5">
+            <p class="d-flex justify-content-center"><span class="alert alert-success py-2 px-3 rounded-pill alert-started border-0 fw-bold">Get started</span></p>
+
+            <h2 class="w-50 mx-auto text-center">Carefuly crafted components ready to use in your project</h2>
+            <p class="fs-5 my-4 text-center">Use Atomic Design to build components, sections and, then, pages.</p>
+            
+            <div class="row py-4">
+                <div class="col-12 col-md-4">
+                    <div class="shadow p-4 intro-item">
+                        <p class="text-center mt-5">
+                            <img class="" src="images/illustration-5.svg" alt="">
+                        </p>
+                        <h3 class="fs-4 mt-5 mb-3">Unleash you creativity</h3>
+                        <p>Quick Website UI Kit (FREE) contains components and pages that are easy to customize and change.</p>     
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="shadow p-4 intro-item">
+                        <p class="text-center mt-5">
+                            <img class="" src="images/illustration-6.svg" alt="">
+                        </p>
+                        <h3 class="fs-4 mt-5 mb-3">Get more results</h3>
+                        <p>Quick Website UI Kit (FREE) contains components and pages that are easy to customize and change.</p>     
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="shadow p-4 intro-item">
+                        <p class="text-center mt-5">
+                            <img class="" src="images/illustration-7.svg" alt="">
+                        </p>
+                        <h3 class="fs-4 mt-5 mb-3">Increase your audience</h3>
+                        <p>Quick Website UI Kit (FREE) contains components and pages that are easy to customize and change.</p>     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--End .introduction-box-->
+
+    <section class="introduction-box py-5" id="screenshot">
+        <div class="container">
+            <div class="row my-5 py-5 pt-0">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                    <img src="images/screen-1-1000x800.jpeg" alt="">
+                </div>
+                <div class="col-12 col-md-2"></div>
+                <div class="col-12 col-md-5">
+                    <h2>Need a quick admin panel for your website?</h2>
+                    <p class="fs-5 my-4">With Quick you get components and examples, including tons of variables that will help you customize this theme with ease.</p>
+                    <ul class="list-unstyled screen-list">
+                        <li class="primary-text d-flex mb-3 align-items-center">
+                            <i class="fas fa-file-invoice d-flex justify-content-center align-items-center me-3"></i>
+                            Perfect for modern startups</li>
+                        <li class="primary-text d-flex mb-3 align-items-center"><i class="fas fa-store-alt d-flex justify-content-center align-items-center me-3"></i>  Ready to be customized</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row my-5 py-5 pt-0">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                    <h2>A modern project management dashboard</h2>
+                    <p class="fs-5 my-4">With Quick you get components and examples, including tons of variables that will help you customize this theme with ease.</p>
+                    <ul class="list-unstyled screen-list">
+                        <li class="primary-text d-flex mb-3 align-items-center">
+                            <i class="fas fa-file-invoice d-flex justify-content-center align-items-center me-3"></i>
+                            Perfect for modern startups</li>
+                        <li class="primary-text d-flex mb-3 align-items-center"><i class="fas fa-store-alt d-flex justify-content-center align-items-center me-3"></i>  Ready to be customized</li>
+                        <li class="primary-text d-flex mb-3 align-items-center"><i class="fas fa-store-alt d-flex justify-content-center align-items-center me-3"></i>  Ready to be customized</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2"></div>
+                <div class="col-12 col-md-5">
+                    <img src="images/screen-2-1000x800.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section><!--End .introduction-box-->
+    
+    <section class="introduction-box py-5 pt-0 primary-bg text-white cta-box" id="features">
+        <div class="container py-5">
+            <div class="text-center py-5">
+                <h2 class="mb-3">Are you ready to grow faster?</h2>
+                <h4 class="mb-5">Create your own experience</h4>
+                <a href="#" class="btn btn-primary text-white rounded-3 secondary-button action-button">Learn more</a>
+            </div>
+           
+        </div>
+    </section><!--End .introduction-box-->
+
+    <section class="introduction-box py-5 pt-0 news-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="p-5 bg-body rounded-3 mb-4 news-item border border-light shadow-sm">
+                        <div class="row">
+                            <div class="col-3">
+                                <span class="badge bg-warning rounded-pill p-2 fw-bold">New</span>
+                            </div>
+                            <div class="col-9">
+                                <h5>Listen to the nature </h5>
+                                <p>Design made simple with a clean and smart HTML markup.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="p-5 bg-body rounded-3 mb-4 news-item border border-light shadow-sm">
+                        <div class="row">
+                            <div class="col-3">
+                                <span class="badge bg-success rounded-pill p-2 fw-bold">Tips</span>
+                            </div>
+                            <div class="col-9">
+                                <h5>Rules not to follow </h5>
+                                <p>Design made simple with a clean and smart HTML markup.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="p-5 bg-body rounded-3 mb-4 news-item border border-light shadow-sm">
+                        <div class="row">
+                            <div class="col-3">
+                                <span class="badge bg-danger rounded-pill p-2 fw-bold">Update</span>
+                            </div>
+                            <div class="col-9">
+                                <h5>Beware the water </h5>
+                                <p>Design made simple with a clean and smart HTML markup.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="p-5 bg-body rounded-3 mb-4 border border-light shadow-sm">
+                        <div class="row">
+                            <div class="col-3">
+                                <span class="badge bg-warning rounded-pill p-2 fw-bold">New</span>
+                            </div>
+                            <div class="col-9">
+                                <h5>Listen to the nature </h5>
+                                <p>Design made simple with a clean and smart HTML markup.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="p-5 bg-body rounded-3 mb-4 border border-light shadow-sm">
+                        <div class="row">
+                            <div class="col-3">
+                                <span class="badge bg-success rounded-pill p-2 fw-bold">Tips</span>
+                            </div>
+                            <div class="col-9">
+                                <h5>Rules not to follow </h5>
+                                <p>Design made simple with a clean and smart HTML markup.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="p-5 bg-body rounded-3 mb-4 border border-light shadow-sm">
+                        <div class="row">
+                            <div class="col-3">
+                                <span class="badge bg-danger rounded-pill p-2 fw-bold">Update</span>
+                            </div>
+                            <div class="col-9">
+                                <h5>Beware the water </h5>
+                                <p>Design made simple with a clean and smart HTML markup.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
+
+            <span class="badge bg-primary rounded-pill p-2 fw-bold mt-5 mb-3">Key features</span>
+            <h5 class="w-50 width-100-mobile lh-lg">
+                Quick is a premium HTML template that includes adaptable components and pages for various industries, plus new ones each month.
+            </h5>
+            <div class="row my-3">
+                <div class="col-12 col-md-4">
+                    <div class="border p-3 rounded-3 mb-4">
+                       <div class="row">
+                           <div class="col-2">
+                               <span class="icon-circle bg-warning text-white p-2 rounded-circle d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-check"></i>
+                               </span>
+                           </div>
+                           <div class="col-10">
+                                <h6 class="fw-bold">100% Responsive</h6>
+                                <p class="mb-0">Built to be customized.</p>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="border p-3 rounded-3 mb-4">
+                       <div class="row">
+                           <div class="col-2">
+                               <span class="icon-circle bg-primary text-white p-2 rounded-circle d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-check"></i>
+                               </span>
+                           </div>
+                           <div class="col-10">
+                                <h6 class="fw-bold">Based on Bootstrap 4</h6>
+                                <p class="mb-0">Built to be customized.</p>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="border p-3 rounded-3 mb-4">
+                       <div class="row">
+                           <div class="col-2">
+                               <span class="icon-circle bg-danger text-white p-2 rounded-circle d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-check"></i>
+                               </span>
+                           </div>
+                           <div class="col-10">
+                                <h6 class="fw-bold">Built with SASS</h6>
+                                <p class="mb-0">Built to be customized.</p>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="border p-3 rounded-3 mb-4">
+                       <div class="row">
+                           <div class="col-2">
+                               <span class="icon-circle bg-success text-white p-2 rounded-circle d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-check"></i>
+                               </span>
+                           </div>
+                           <div class="col-10">
+                                <h6 class="fw-bold">300+ components</h6>
+                                <p class="mb-0">Built to be customized.</p>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="border p-3 rounded-3 mb-4">
+                       <div class="row">
+                           <div class="col-2">
+                               <span class="icon-circle bg-primary opacity-75 text-white p-2 rounded-circle d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-check"></i>
+                               </span>
+                           </div>
+                           <div class="col-10">
+                                <h6 class="fw-bold">23+ widgets</h6>
+                                <p class="mb-0">Built to be customized.</p>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="border p-3 rounded-3 mb-4">
+                       <div class="row">
+                           <div class="col-2">
+                               <span class="icon-circle bg-warning text-white p-2 rounded-circle d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-check"></i>
+                               </span>
+                           </div>
+                           <div class="col-10">
+                                <h6 class="fw-bold">Bootstrap Flexbox Grid</h6>
+                                <p class="mb-0">Built to be customized.</p>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="border p-3 rounded-3 mb-4">
+                       <div class="row">
+                           <div class="col-2">
+                               <span class="icon-circle bg-primary opacity-75 text-white p-2 rounded-circle d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-check"></i>
+                               </span>
+                           </div>
+                           <div class="col-10">
+                                <h6 class="fw-bold">Animate CSS</h6>
+                                <p class="mb-0">Built to be customized.</p>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="border p-3 rounded-3 mb-4">
+                       <div class="row">
+                           <div class="col-2">
+                               <span class="icon-circle bg-danger text-white p-2 rounded-circle d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-check"></i>
+                               </span>
+                           </div>
+                           <div class="col-10">
+                                <h6 class="fw-bold">Integrated plugins</h6>
+                                <p class="mb-0">Built to be customized.</p>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="border p-3 rounded-3 mb-4">
+                       <div class="row">
+                           <div class="col-2">
+                               <span class="icon-circle bg-primary opacity-75 text-white p-2 rounded-circle d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-check"></i>
+                               </span>
+                           </div>
+                           <div class="col-10">
+                                <h6 class="fw-bold">Smart HTML markup</h6>
+                                <p class="mb-0">Built to be customized.</p>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><!--End .introduction-box-->
+
+    <section class="introduction-box py-5 pricing-bg" id="pricing">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col12 col-md-7">
+                    <h2 class="text-center fw-bold fs-1">Complete features at your hand</h2>
+                    <p class="text-center">Thousands of developers around the world have already made Quick the main tool for building websites.</p>
+                </div>
+              
+            </div>
+           
+            <div class="row justify-content-center pt-5 mb-5">
+                <div class="col-12 col-md-8">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3 mb-md-0">
+                            <div class="border bg-white shadow-sm p-5 text-center pricing-box">
+                                <div class="pb-5 pt-3">
+                                    <h2 class="fw-bold fs-1">$49</h2>
+                                    <p class="fw-bold">Standard License</p>
+                                </div>
+                                <div class="pb-2 pt-3">
+                                    <ul class="list-unstyled lh-lg">
+                                        <li>1 end product</li>
+                                        <li>Use for personal or a client</li>
+                                        <li>Use in a free end product</li>
+                                        <li>6 months technical support</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-warning text-white">Purchase now</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="border primary-bg shadow-sm p-5 text-center text-white pricing-box">
+                                <div class="pb-5 pt-3">
+                                    <h2 class="fw-bold fs-1 text-white">$590</h2>
+                                    <p class="fw-bold">Extended License</p>
+                                </div>
+                                <div class="pb-2 pt-3">
+                                    <ul class="list-unstyled lh-lg">
+                                        <li>1 end product</li>
+                                        <li>Use for personal or a client</li>
+                                        <li>Use in a free end product</li>
+                                        <li>Use in an end product that is <span class="fw-bold text-success highlight-price" title="Sold">sold</span></li>
+                                        <li>6 months technical support</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-light">Purchase now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center mb-5">
+                <p>Both pricings contains all 6 months free support. Need more?</p>
+                <a href="#" class="contact-link">Contact us <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+        </div><!--End .container-->
+    </section><!--End .introduction-box-->
+
+    <footer class="footer introduction-box primary-bg cta-box text-light">
+        <div class="container">
+            <div class="row border-bottom border-inner pb-3">
+                <div class="col-12 col-md-4">
+                    <p><a href="#"><img src="images/light.svg" alt=""></a></p>
+                    <p>
+                        Webpixels attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.
+                    </p>
+                    <ul class="list-unstyled d-flex social-list mt-5">
+                        <li class="me-4"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                        <li class="me-4"><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li class="me-4"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="me-4"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="row justify-content-end">
+                        <div class="col-6 col-md-3">
+                            <div class="footer-item">
+                                <p class="fw-bold fs-5">Account</p>
+                                <ul class="list-unstyled lh-lg">
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Billing</a></li>
+                                    <li><a href="#">Notifications</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="footer-item">
+                                <p class="fw-bold fs-5">About</p>
+                                <ul class="list-unstyled lh-lg">
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="footer-item">
+                                <p class="fw-bold fs-5">Company</p>
+                                <ul class="list-unstyled lh-lg">
+                                    <li><a href="#">Community</a></li>
+                                    <li><a href="#">Help center</a></li>
+                                    <li><a href="#">Support</a></li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-4 text-center text-md-start">
+                <div class="col-12 col-md-6">
+                    © 2020 Webpixels. All rights reserved
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end ">
+                    <ul class="nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Terms</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Cookies</a>
+                        </li>
+                       
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--End .footer-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
